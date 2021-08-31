@@ -1,9 +1,10 @@
-import "./App.css";
+import SideBar from "./components/SideBar";
+import "./style/app.css";
 
 function App() {
   return (
     <div className="App">
-      <p>this is the first commit</p>
+      <SideBar />
     </div>
   );
 }
