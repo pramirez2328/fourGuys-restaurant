@@ -1,27 +1,50 @@
 import React from "react";
 import "../style/sideBar.css";
 import logo from "../images/logo.jpeg";
+import burger from "../images/burger.jpg";
+import dog from "../images/dog.jpg";
+import cake from "../images/cake.jpg";
+import drink from "../images/drink.jpg";
+
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
     <nav id="sideBar">
       <div>
-        <img id="logo" src={logo} alt="hamburger logo" />
-        <h1 className="title">Four Guys</h1>
+        <Link to="/">
+          <img id="logo" src={logo} alt="hamburger logo" />
+        </Link>
+
+        <h1 className="title">
+          <Link to="/">Four Guys </Link>
+        </h1>
       </div>
 
       <ul id="sideNavUl">
         <li className="links">
-          <a href="/hamburgers"> Hamburgers</a>
+          <Link to="/hamburgers">
+            <img className="icons" src={burger} alt="hamburger" />
+            <span className="iconNames">Hamburgers</span>
+          </Link>
         </li>
         <li className="links">
-          <a href="/hotdogs">Hot dogs</a>
+          <Link to="/hotdogs">
+            <img className="icons" src={dog} alt="hot dog" />
+            <span className="iconNames">Hot Dogs</span>
+          </Link>
         </li>
         <li className="links">
-          <a href="/dessert">Dessert</a>
+          <Link to="/dessert">
+            <img className="icons" src={cake} alt="cake" />
+            <span className="iconNames">Desserts</span>
+          </Link>
         </li>
         <li className="links">
-          <a href="drinks">Drinks</a>
+          <Link to="/drinks">
+            <img className="icons" src={drink} alt="drink" />
+            <span className="iconNames">Drinks</span>
+          </Link>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,21 @@
+#mainDiv {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#titleMain {
+  position: absolute;
+  top: 7em;
+  left: 3em;
+  color: white;
+  font-family: fantasy;
+  font-size: 3em;
+  letter-spacing: 0.5em;
+}
+#mainImage {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: 0;
+}
