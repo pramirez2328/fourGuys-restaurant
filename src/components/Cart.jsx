@@ -5,7 +5,11 @@ import "../style/cart.css";
 function Cart() {
   return (
     <div id="cartDiv">
-      <img id="cart" src={cart} alt="shopping cart" />
+      <h1 id="cartTitle">FOUR GUYS</h1>
+      <div id="cart">
+        <img src={cart} alt="shopping cart" />
+        <p>0 items</p>
+      </div>
     </div>
   );
 }

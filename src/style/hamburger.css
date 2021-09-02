@@ -1,0 +1,46 @@
+.section {
+  width: 100%;
+}
+
+fieldset {
+  border: red solid 1px;
+  margin: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+legend {
+  color: red;
+  font-size: 2em;
+  letter-spacing: 0.5em;
+}
+
+.sectionPicture {
+  width: 50%;
+}
+.sectionPicture img {
+  width: 40%;
+}
+
+.burgerCounter {
+  display: flex;
+  align-items: center;
+}
+
+.buttons,
+.counter {
+  font-size: 2em;
+  width: 2em;
+  height: 1em;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+}
+
+.counter {
+  background-color: white;
+  color: black;
+}
