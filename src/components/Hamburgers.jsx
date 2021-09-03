@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "./SideBar";
 import Cart from "./Cart";
 import "../style/hamburger.css";
 import sectionBurger from "../images/sectionBurger.jpg";
+import BurgerIngredients from "./BurgerIngredients";
 
 function Hamburgers() {
+  const [value, setValue] = useState(0);
   return (
     <>
       <SideBar />
@@ -22,6 +24,8 @@ function Hamburgers() {
             <button className="buttons">+</button>
           </div>
         </fieldset>
+
+        <BurgerIngredients value={value} />
       </div>
     </>
   );
