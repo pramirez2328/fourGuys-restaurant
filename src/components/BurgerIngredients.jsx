@@ -2,7 +2,6 @@ import React from "react";
 import "../style/burgerIngredients.css";
 
 function BurgerIngredients({ value }) {
-  console.log(value);
   return (
     <div id="burgerIngredients">
       <div>

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import SideBar from "./SideBar";
 import Cart from "./Cart";
-import "../style/hamburger.css";
+import "../style/food.css";
 import sectionBurger from "../images/sectionBurger.jpg";
 import BurgerIngredients from "./BurgerIngredients";
+import AddItems from "./AddItems";
 
 function Hamburgers() {
   const [value, setValue] = useState(0);
@@ -26,6 +27,7 @@ function Hamburgers() {
         </fieldset>
 
         <BurgerIngredients value={value} />
+        <AddItems />
       </div>
     </>
   );

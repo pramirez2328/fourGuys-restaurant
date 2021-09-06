@@ -1,5 +1,5 @@
 .section {
-  width: 100%;
+  width: 70%;
 }
 
 fieldset {
@@ -19,7 +19,8 @@ legend {
   width: 50%;
 }
 .sectionPicture img {
-  width: 40%;
+  width: 12em;
+  height: 8em;
 }
 
 .burgerCounter {
