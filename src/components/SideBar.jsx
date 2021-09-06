@@ -16,9 +16,9 @@ function SideBar() {
           <img id="logo" src={logo} alt="hamburger logo" />
         </Link>
 
-        <h1 className="title">
-          <Link to="/">Four Guys </Link>
-        </h1>
+        <h4 className="title">
+          <Link to="/">World Famous Burgers </Link>
+        </h4>
       </div>
 
       <ul id="sideNavUl">

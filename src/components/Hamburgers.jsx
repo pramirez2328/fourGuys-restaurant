@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import SideBar from "./SideBar";
 import Cart from "./Cart";
 import "../style/food.css";
+import "../style/sideBar.css";
+
 import sectionBurger from "../images/sectionBurger.jpg";
 import BurgerIngredients from "./BurgerIngredients";
 import AddItems from "./AddItems";
