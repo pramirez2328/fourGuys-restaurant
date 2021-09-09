@@ -1,8 +1,14 @@
-#burgerIngredients {
+.foodIngredients {
   display: flex;
   justify-content: space-around;
-
   margin: 2em;
+}
+
+.subtitle {
+  margin-left: 2em;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: cursive;
 }
 
 .switch {

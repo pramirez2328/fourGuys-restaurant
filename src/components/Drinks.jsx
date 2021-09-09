@@ -1,4 +1,3 @@
-import React from "react";
 import SideBar from "./SideBar";
 import Cart from "./Cart";
 import AddItems from "./AddItems";
