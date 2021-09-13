@@ -14,7 +14,7 @@ function Drinks() {
 
         <fieldset>
           <legend>Coca-Cola</legend>
-          <div className="sectionPicture">
+          <div className="dessert_and_drinks">
             <img src={coke} alt="soda can" />
           </div>
           <div className="burgerCounter">
@@ -25,7 +25,7 @@ function Drinks() {
         </fieldset>
         <fieldset>
           <legend>Sprite</legend>
-          <div className="sectionPicture">
+          <div className="dessert_and_drinks">
             <img src={sprite} alt="soda can" />
           </div>
           <div className="burgerCounter">
@@ -36,7 +36,7 @@ function Drinks() {
         </fieldset>
         <fieldset>
           <legend>Fanta</legend>
-          <div className="sectionPicture">
+          <div className="dessert_and_drinks">
             <img src={fanta} alt="soda can" />
           </div>
           <div className="burgerCounter">

@@ -16,7 +16,7 @@ function Dessert() {
 
         <fieldset>
           <legend>Chocolate cake</legend>
-          <div className="sectionPicture">
+          <div className="dessert_and_drinks">
             <img src={chocolateCake} alt="hamburger" />
           </div>
           <div className="burgerCounter">
@@ -28,7 +28,7 @@ function Dessert() {
 
         <fieldset>
           <legend>Cheese Cake</legend>
-          <div className="sectionPicture">
+          <div className="dessert_and_drinks">
             <img src={cheeseCake} alt="hamburger" />
           </div>
           <div className="burgerCounter">
@@ -40,7 +40,7 @@ function Dessert() {
 
         <fieldset>
           <legend>Flan</legend>
-          <div className="sectionPicture">
+          <div className="dessert_and_drinks">
             <img src={flan} alt="flan" />
           </div>
           <div className="burgerCounter">
