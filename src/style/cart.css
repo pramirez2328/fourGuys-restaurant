@@ -15,6 +15,7 @@
 #cart img {
   width: 3em;
   float: right;
+  cursor: pointer;
 }
 
 #cartTitle {
