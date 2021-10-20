@@ -9,7 +9,16 @@ import BurgerIngredients from "./BurgerIngredients";
 import AddItems from "./AddItems";
 
 function Hamburgers() {
-  const [value, setValue] = useState(0);
+  const [hamburgerValue, sethamburgerValue] = useState(0);
+  const handleNumberOfBurgers = (sign) => {
+    let addOrDecrease = sign === "+" ? 1 : -1;
+    if (hamburgerValue === 0 && addOrDecrease === -1) {
+      sethamburgerValue(0);
+    } else {
+      sethamburgerValue((prev) => prev + addOrDecrease);
+    }
+  };
+
   return (
     <>
       <SideBar />
@@ -22,13 +31,23 @@ function Hamburgers() {
             <img src={sectionBurger} alt="hamburger" />
           </div>
           <div className="burgerCounter">
-            <button className="buttons">-</button>
-            <span className="counter">0</span>
-            <button className="buttons">+</button>
+            <button
+              className="buttons"
+              onClick={() => handleNumberOfBurgers("-")}
+            >
+              -
+            </button>
+            <span className="counter">{hamburgerValue}</span>
+            <button
+              className="buttons"
+              onClick={() => handleNumberOfBurgers("+")}
+            >
+              +
+            </button>
           </div>
         </fieldset>
 
-        <BurgerIngredients value={value} />
+        <BurgerIngredients />
         <AddItems />
       </div>
     </>

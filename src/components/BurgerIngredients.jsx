@@ -4,7 +4,7 @@ import "../style/food.css";
 function BurgerIngredients({ value }) {
   return (
     <div id="ingredients">
-      <h2 class="subtitle">Customize your burger!</h2>
+      <h2 className="subtitle">Customize your burger!</h2>
       <div className="foodIngredients">
         <div className="food_divs">
           <div>
