@@ -8,6 +8,14 @@ import AddItems from "./AddItems";
 
 function HotDogs() {
   const [dogs, setDogs] = useState(0);
+
+  const handleAddDogs = (sign) => {
+    if (sign === "+") {
+      setDogs((prev) => prev + 1);
+    } else if (dogs !== 0) {
+      setDogs((prev) => prev - 1);
+    }
+  };
   return (
     <>
       <SideBar />
@@ -20,9 +28,13 @@ function HotDogs() {
             <img src={hotDog} alt="hamburger" />
           </div>
           <div className="burgerCounter">
-            <button className="buttons">-</button>
-            <span className="counter">0</span>
-            <button className="buttons">+</button>
+            <button className="buttons" onClick={() => handleAddDogs("-")}>
+              -
+            </button>
+            <span className="counter">{dogs}</span>
+            <button className="buttons" onClick={() => handleAddDogs("+")}>
+              +
+            </button>
           </div>
         </fieldset>
 

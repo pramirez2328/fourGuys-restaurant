@@ -11,11 +11,10 @@ import AddItems from "./AddItems";
 function Hamburgers() {
   const [hamburgerValue, sethamburgerValue] = useState(0);
   const handleNumberOfBurgers = (sign) => {
-    let addOrDecrease = sign === "+" ? 1 : -1;
-    if (hamburgerValue === 0 && addOrDecrease === -1) {
-      sethamburgerValue(0);
-    } else {
-      sethamburgerValue((prev) => prev + addOrDecrease);
+    if (sign === "+") {
+      sethamburgerValue((prev) => prev + 1);
+    } else if (hamburgerValue !== 0) {
+      sethamburgerValue((prev) => prev - 1);
     }
   };
 
