@@ -31,7 +31,6 @@ function Dessert() {
           : cheeseItems && setCheeseItems((prev) => prev - 1);
         break;
       default:
-        console.log("wrong choice");
     }
   };
 
