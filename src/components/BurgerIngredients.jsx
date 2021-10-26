@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/food.css";
 
-function BurgerIngredients({ value }) {
+function BurgerIngredients() {
   return (
     <div id="ingredients">
       <h2 className="subtitle">Customize your burger!</h2>
@@ -17,7 +17,7 @@ function BurgerIngredients({ value }) {
           <div>
             <h3>Cheese</h3>
             <label className="switch">
-              <input type="checkbox" value={`${value}`} />
+              <input type="checkbox" />
               <span className="slider round"></span>
             </label>
           </div>
@@ -27,7 +27,7 @@ function BurgerIngredients({ value }) {
           <div>
             <h3>Lettuce</h3>
             <label className="switch">
-              <input type="checkbox" value={`${value}`} />
+              <input type="checkbox" />
               <span className="slider round"></span>
             </label>
           </div>
