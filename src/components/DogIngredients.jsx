@@ -1,7 +1,7 @@
 function DogIngredients({ value }) {
   return (
     <div>
-      <h2 class="subtitle">Customize your hot dog!</h2>
+      <h2 className="subtitle">Customize your hot dog!</h2>
       <div className="foodIngredients">
         <div className="food_divs">
           <div>
