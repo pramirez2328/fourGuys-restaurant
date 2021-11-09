@@ -10,7 +10,8 @@ function BurgerIngredients() {
           <div>
             <h3> Jalapeño</h3>
             <label className="switch">
-              <input type="checkbox" />
+              <input type="checkbox" id="inputJalapeno" />
+
               <span className="slider round"></span>
             </label>
           </div>

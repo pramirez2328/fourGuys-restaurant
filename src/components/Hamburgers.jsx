@@ -54,4 +54,3 @@ function Hamburgers() {
 }
 
 export default Hamburgers;
-// this is cool
